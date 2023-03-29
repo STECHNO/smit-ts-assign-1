@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js"></script>
+    <title>Ts Assignment 1</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .loader {
+            margin-top: 1rem;
+            border: 10px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 10px solid #34db82;
+            width: 80px;
+            height: 80px;
+            -webkit-animation: spin 1s linear infinite;
+            animation: spin 1s linear infinite;
+            display: block;
+        }
+
+        .products-table {
+            display: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: calc(100vw - 30rem) !important;
+            border: 1px solid black;
+            width: 900px;
+        }
+
+        tr {
+            border: 1px solid gray;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        th,
+        td {
+            height: 10px;
+            padding: .5rem;
+            border: 1px solid gray;
+            text-align: left;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>TS Assignment 1</h1>
+        <h2>Products Table</h2>
+
+        <div>
+            <div id="loaderDiv" class="loader"></div>
+            <div id="productsTable" class="products-table">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
